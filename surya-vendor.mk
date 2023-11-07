@@ -339,7 +339,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.3 \
     btaudio_offload_if \
     audio.primary.sm6150 \
-    sound_trigger.primary.sm6150 \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libFileMux_proprietary \
     libMpeg4SwEncoder \
@@ -359,7 +358,6 @@ PRODUCT_PACKAGES += \
     libOmxWmaDec \
     liba2dpoffload \
     libadm \
-    libadpcmdec \
     libaudio_log_utils \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
@@ -367,10 +365,8 @@ PRODUCT_PACKAGES += \
     libdsd2pcm \
     libmmrtpdecoder_proprietary \
     libmmrtpencoder_proprietary \
-    libmulawdec \
     libpn553_fw \
     libqcodec2 \
-    libsmwrapper \
     libsurround_3mic_proc \
     libswvdec \
     libvppclient \

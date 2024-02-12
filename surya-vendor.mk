@@ -7,8 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service \
-    vendor/xiaomi/surya/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/xiaomi/surya/proprietary/system_ext/bin/wfdservice64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice64 \
+    vendor/xiaomi/surya/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/xiaomi/surya/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/surya/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/surya/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
@@ -454,6 +454,8 @@ PRODUCT_PACKAGES += \
     libllvm-qcom \
     libmdmdetect \
     libmmosal_vendor \
+    libprotobuf-cpp-full-3.9.1_xiaomi \
+    libprotobuf-cpp-lite-3.9.1_xiaomi \
     libqmi \
     libqmi_cci \
     libqmi_client_helper \
@@ -719,6 +721,7 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
+    libprotobuf-cpp-full-vendor-3.9.1_xiaomi \
     libqcbor \
     libqcc_file_agent \
     libqcmaputils \

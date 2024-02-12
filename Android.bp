@@ -776,6 +776,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libprotobuf-cpp-full-3.9.1_xiaomi",
+	stem: "libprotobuf-cpp-full-3.9.1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libprotobuf-cpp-full-3.9.1.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libprotobuf-cpp-full-3.9.1.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libprotobuf-cpp-lite-3.9.1_xiaomi",
+	stem: "libprotobuf-cpp-lite-3.9.1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libprotobuf-cpp-lite-3.9.1.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libprotobuf-cpp-lite-3.9.1.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libqmi",
 	owner: "xiaomi",
 	strip: {
@@ -5425,6 +5467,24 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libperipheral_client.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libprotobuf-cpp-full-vendor-3.9.1_xiaomi",
+	stem: "libprotobuf-cpp-full-vendor-3.9.1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libprotobuf-cpp-full-vendor-3.9.1.so"],
 		},
 	},
 	compile_multilib: "64",
